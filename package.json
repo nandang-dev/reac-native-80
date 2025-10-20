@@ -7,8 +7,8 @@
     "android:clean": "cd android && ./gradlew clean && cd ../",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "start": "react-native start",
-    "start:clear": "watchman watch-del-all && yarn start --reset-cache",
+    "start": "node init && react-native start",
+    "start:clear": "node init && watchman watch-del-all && yarn start --reset-cache",
     "test": "jest",
     "postinstall": "patch-package"
   },
